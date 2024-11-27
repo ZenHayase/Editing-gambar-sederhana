@@ -1,0 +1,46 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversion Result</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .image-box {
+            text-align: center;
+            width: 48%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversion Result</h1>
+    <div class="image-container">
+        <div class="image-box">
+            <h3>Original Image</h3>
+            <img src="data:image/png;base64,{{ original_image }}" alt="Original">
+        </div>
+        <div class="image-box">
+            <h3>Processed Image</h3>
+            <img src="data:image/png;base64,{{ processed_image }}" alt="Processed">
+        </div>
+    </div>
+    <p>
+        <a href="/">Convert Another Image</a>
+    </p>
+</body>
+</html>

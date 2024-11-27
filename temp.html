@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Converter</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Converter</h1>
+    <div class="form-container">
+        <form action="/convert" method="post" enctype="multipart/form-data">
+            <p>
+                <input type="file" name="image" accept="image/*" required>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="transform" value="grayscale" checked>
+                    Grayscale
+                </label>
+                <label>
+                    <input type="radio" name="transform" value="blur">
+                    Blur
+                </label>
+            </p>
+            <p>
+                <button type="submit">Convert</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
+
